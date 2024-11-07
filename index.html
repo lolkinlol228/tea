@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайка</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icons/icon blak.png">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
+        <div class="container" >
+            <img src="icons/def icon.png" alt="icon" style="max-width: 5%;  height: auto; display: block;">
+            <a class="navbar-brand" href="#">Энциклопедия чая</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#varieties">Виды чая</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#brewing">Руководство по завариванию</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Польза для здоровья</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">История</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <div class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Откройте мир чая</h1>
+            <p class="lead">Исследуйте различные виды, техники заваривания и богатую историю чайной культуры</p>
+        </div>
+    </div>
+
+    <!-- Секция "Виды чая" -->
+    <section id="varieties" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Виды чая</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1672349888094-3124c2d77dc4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Чёрный чай">
+                        <div class="card-body">
+            <h5  class="card-title">Чёрный чай</h5>
+                      
+                            <p class="card-text">Полностью окисленный чай с насыщенным вкусом. Богат антиоксидантами и кофеином.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай, Индия</li>
+                                <li>Кофеин: Высокий</li>
+                                <li>Вкус: Насыщенный, солодовый</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://artoftea.ru/image/cache/catalog/article/kak-vybrat-zelyonyj-chaj/cover-848x424.jpeg" class="card-img-top" alt="Зелёный чай">
+                        <div class="card-body">
+                            
+                       <h5 class="card-title" >Зелёный чай</h5>
+                                    
+                       
+                            <p class="card-text">Неокисленный чай со свежим, травянистым вкусом. Богат катехинами.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай, Япония</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Травяной, лёгкий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmQ9O3l1cvbaA6L3CzBADXKazym4krmjJT6Buzr9fmhrK_SVdKAEelb50kyn6ulWrpPg&usqp=CAU" class="card-img-top" alt="Улун">
+                        <div class="card-body">
+                       
+                      <h5 class="card-title" >Улун</h5>
+             
+                            <p class="card-text">Частично окисленный чай с комплексным вкусовым профилем.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай, Тайвань</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Варьируется по степени окисления</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://www.torrefacto.ru/upload/uf/106/k2xqbkpbd40s4wzn4bqfraos1rdgoouw.jpg" class="card-img-top" alt="Белый чай">
+                        <div class="card-body">
+                           
+                 <h5 class="card-title" >Белый чай</h5>
+                         
+                            <p class="card-text">Минимально обработанный чай с нежным вкусом. Содержит наименьшее количество кофеина.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Низкий</li>
+                                <li>Вкус: Лёгкий, цветочный</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://cdn.teaworkshop.ru/media/cache/sylius_shop_api/94/e8/5ed59860f8c9940aef9a625308ef.jpeg" class="card-img-top" alt="Пуэр">
+                        <div class="card-body">
+                            <h5 class="card-title">Пуэр</h5>
+                            <p class="card-text">Ферментированный чай с глубоким и землистым вкусом, улучшающимся со временем.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Землистый, глубокий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://teacoffeepoint.ru/upload/medialibrary/d9d/d9d6d12bd5512feaa338a5856fedbdd6.jpg" class="card-img-top" alt="Травяной чай">
+                        <div class="card-body">
+                            <h5 class="card-title">Травяной чай</h5>
+                            <p class="card-text">Не содержит чайных листьев, приготовлен из трав, цветов и фруктов.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Различные регионы</li>
+                                <li>Кофеин: Отсутствует</li>
+                                <li>Вкус: Варьируется в зависимости от ингредиентов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://clubcha.ru/files/products/HUACH-24-08-003-R.600x600.jpg?6cd243b084f3e024bfd812f02f36ccbd" class="card-img-top" alt="Желтый чай">
+                        <div class="card-body">
+                            <h5 class="card-title">Желтый чай</h5>
+                            <p class="card-text">Редкий и деликатный чай, подвергается лёгкой ферментации, похож на зелёный чай, но с более мягким вкусом.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Нежный, сладковатый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://m.coffeeok.com.ua/media/catalog/product/1/0/1008737-2.jpg" class="card-img-top" alt="Матча">
+                        <div class="card-body">
+                            <h5 class="card-title">Матча</h5>
+                            <p class="card-text">Порошкообразный зелёный чай, известен своим насыщенным вкусом и высоким содержанием антиоксидантов.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Япония</li>
+                                <li>Кофеин: Высокий</li>
+                                <li>Вкус: Травяной, насыщенный</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://media.istockphoto.com/id/827414234/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D0%BE%D0%B9%D0%B1%D0%BE%D1%81-%D0%BA%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0-%D1%87%D0%B0%D0%B9-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC.jpg?s=612x612&w=0&k=20&c=WdmRXK4Lmh3_KsSJRKAUSxqMrJJ-t8QXdkoROYKmejk=" class="card-img-top" alt="Ройбуш">
+                        <div class="card-body">
+                            <h5 class="card-title">Ройбуш</h5>
+                            <p class="card-text">Травяной чай из Южной Африки, не содержит кофеина, имеет сладковатый и ореховый вкус.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Южная Африка</li>
+                                <li>Кофеин: Отсутствует</li>
+                                <li>Вкус: Сладковатый, ореховый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://domhu.ru/upload/iblock/908/908aa0799ee77ae865ec61b3470b0c84.jpg" class="card-img-top" alt="Чай каркаде">
+                        <div class="card-body">
+                            <h5 class="card-title">Каркаде</h5>
+                            <p class="card-text">Чай на основе цветков гибискуса, имеет кислый вкус и ярко-красный цвет.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Египет, Судан</li>
+                                <li>Кофеин: Отсутствует</li>
+                                <li>Вкус: Кисловатый, фруктовый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://kardamon-shop.ru/upload/iblock/1ee/shtlepjhxarymeyovfvz2q2obfcc7qcb.jpg" class="card-img-top" alt="Чай масала">
+                        <div class="card-body">
+                            <h5 class="card-title">Масала</h5>
+                            <p class="card-text">Чёрный чай, приготовленный с молоком и пряностями, такими как кардамон, имбирь и корица.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Индия</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Пряный, насыщенный</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://origamitea.ru/wp-content/uploads/2018/03/genmaicha-premium.jpg" class="card-img-top" alt="Генмайча">
+                        <div class="card-body">
+                            <h5 class="card-title">Генмайча</h5>
+                            <p class="card-text">Зелёный чай с добавлением обжаренного риса, что придаёт ему ореховый вкус и аромат.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Япония</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Ореховый, лёгкий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://img.shop.rusteaco.ru/files/1/954/34997178/original/kak-sdelat-chay-mate-1716474074572.jpg" class="card-img-top" alt="Матэ">
+                        <div class="card-body">
+                            <h5 class="card-title">Матэ</h5>
+                            <p class="card-text">Традиционный южноамериканский напиток на основе листьев падуба, обладающий сильным тонизирующим эффектом.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Южная Америка</li>
+                                <li>Кофеин: Высокий</li>
+                                <li>Вкус: Травяной, горьковатый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://artoftea.ru/image/cache/catalog/article/lapsang-sushong/cover-848x424.jpeg" class="card-img-top" alt="Лапсанг Сушонг">
+                        <div class="card-body">
+                            <h5 class="card-title">Лапсанг Сушонг</h5>
+                            <p class="card-text">Чёрный чай с характерным дымным ароматом, благодаря копчению на сосновых дровах.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Высокий</li>
+                                <li>Вкус: Дымный, глубокий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://ir.ozone.ru/s3/multimedia-1-2/w500/7008637574.jpg" class="card-img-top" alt="Куэрчжэнь">
+                        <div class="card-body">
+                            <h5 class="card-title">Куар Чжень</h5>
+                            <p class="card-text">высококачественный зелёный чай с ярким вкусом, сильным ароматом и лёгкой сладковатой ноткой.
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Травяной, слегка сладковатый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://solovl.ru/wp-content/uploads/2020/04/%D0%AD%D1%80%D0%BB-%D0%B3%D1%80%D0%B5%D0%B9_800_800.jpg" class="card-img-top" alt="Чай Эрл Грей">
+                        <div class="card-body">
+                            <h5 class="card-title">Эрл Грей</h5>
+                            <p class="card-text">Чёрный чай, ароматизированный маслом бергамота, известный своим цитрусовым вкусом.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай, Индия</li>
+                                <li>Кофеин: Высокий</li>
+                                <li>Вкус: Цитрусовый, ароматный</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://podarok.cn.ua/upload/shop_catalog/s15062/407145/407145_0.jpg" class="card-img-top" alt="Чай Лаванда">
+                        <div class="card-body">
+                            <h5 class="card-title">Чай Лаванда</h5>
+                            <p class="card-text">Травяной чай с добавлением лаванды, обладающий успокаивающим и расслабляющим эффектом.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Разные регионы</li>
+                                <li>Кофеин: Отсутствует</li>
+                                <li>Вкус: Цветочный, успокаивающий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tea-card h-100">
+                        <img src="https://www.tea-terra.ru/wp-content/uploads/2015/05/2015_05_02_01_002.jpg" class="card-img-top" alt="Чай с жасмином">
+                        <div class="card-body">
+                            <h5 class="card-title">Чай с жасмином</h5>
+                            <p class="card-text">Зелёный или чёрный чай, ароматизированный жасмином, с характерным цветочным ароматом.</p>
+                            <ul class="list-unstyled">
+                                <li>Происхождение: Китай</li>
+                                <li>Кофеин: Средний</li>
+                                <li>Вкус: Цветочный, сладковатый</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Секция "Руководство по завариванию" -->
+    <section id="brewing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Руководство по завариванию</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="brewing-guide">
+                        <div class="accordion" id="brewingAccordion">
+                            <div class="accordion" id="brewingAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#blackTeaBrewing">
+                                            Чёрный чай
+                                        </button>
+                                    </h2>
+                                    <div id="blackTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 90-100°C (194-212°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#greenTeaBrewing">
+                                            Зелёный чай
+                                        </button>
+                                    </h2>
+                                    <div id="greenTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 70-80°C (158-176°F)<br>
+                                            Время заваривания: 1-3 минуты<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oolongTeaBrewing">
+                                            Улун
+                                        </button>
+                                    </h2>
+                                    <div id="oolongTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 85-95°C (185-203°F)<br>
+                                            Время заваривания: 2-5 минут<br>
+                                            Соотношение: 3 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#whiteTeaBrewing">
+                                            Белый чай
+                                        </button>
+                                    </h2>
+                                    <div id="whiteTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 75-85°C (167-185°F)<br>
+                                            Время заваривания: 4-7 минут<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#puerhTeaBrewing">
+                                            Пуэр
+                                        </button>
+                                    </h2>
+                                    <div id="puerhTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 95-100°C (203-212°F)<br>
+                                            Время заваривания: 2-4 минуты<br>
+                                            Соотношение: 3-4 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#herbalTeaBrewing">
+                                            Травяной чай
+                                        </button>
+                                    </h2>
+                                    <div id="herbalTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 90-100°C (194-212°F)<br>
+                                            Время заваривания: 5-7 минут<br>
+                                            Соотношение: 2-3 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#yellowTeaBrewing">
+                                            Жёлтый чай
+                                        </button>
+                                    </h2>
+                                    <div id="yellowTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 70-75°C (158-167°F)<br>
+                                            Время заваривания: 2-3 минуты<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#matchaTeaBrewing">
+                                            Матча
+                                        </button>
+                                    </h2>
+                                    <div id="matchaTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 70-80°C (158-176°F)<br>
+                                            Время заваривания: Взбивать до появления пены<br>
+                                            Соотношение: 2 г на 70-80 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rooibosTeaBrewing">
+                                            Ройбуш
+                                        </button>
+                                    </h2>
+                                    <div id="rooibosTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 100°C (212°F)<br>
+                                            Время заваривания: 5-7 минут<br>
+                                            Соотношение: 2-3 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hibiscusTeaBrewing">
+                                            Каркаде
+                                        </button>
+                                    </h2>
+                                    <div id="hibiscusTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 100°C (212°F)<br>
+                                            Время заваривания: 4-5 минут<br>
+                                            Соотношение: 2-3 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masalaTeaBrewing">
+                                            Масала
+                                        </button>
+                                    </h2>
+                                    <div id="masalaTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 100°C (212°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 2 г чая + специи на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genmaiTeaBrewing">
+                                            Генмайча
+                                        </button>
+                                    </h2>
+                                    <div id="genmaiTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 80-85°C (176-185°F)<br>
+                                            Время заваривания: 1-3 минуты<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mateTeaBrewing">
+                                            Матэ
+                                        </button>
+                                    </h2>
+                                    <div id="mateTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 70-80°C (158-176°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 2-3 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lapsangTeaBrewing">
+                                            Лапсанг Сушонг
+                                        </button>
+                                    </h2>
+                                    <div id="lapsangTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 90-95°C (194-203°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kuerzhengTeaBrewing">
+                                            Куэрчжэнь
+                                        </button>
+                                    </h2>
+                                    <div id="kuerzhengTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 85-90°C (185-194°F)<br>
+                                            Время заваривания: 2-3 минуты<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#earlGreyTeaBrewing">
+                                            Эрл Грей
+                                        </button>
+                                    </h2>
+                                    <div id="earlGreyTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 90-95°C (194-203°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lavenderTeaBrewing">
+                                            Чай Лаванда
+                                        </button>
+                                    </h2>
+                                    <div id="lavenderTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 90-95°C (194-203°F)<br>
+                                            Время заваривания: 3-5 минут<br>
+                                            Соотношение: 1-2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jasmineTeaBrewing">
+                                            Чай с жасмином
+                                        </button>
+                                    </h2>
+                                    <div id="jasmineTeaBrewing" class="accordion-collapse collapse" data-bs-parent="#brewingAccordion">
+                                        <div class="accordion-body">
+                                            <p>Температура: 75-85°C (167-185°F)<br>
+                                            Время заваривания: 2-3 минуты<br>
+                                            Соотношение: 2 г на 200 мл воды</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Польза для здоровья" -->
+    <section id="benefits" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Польза для здоровья</h2>
+            <div class="row">
+                
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Антиоксидантная защита</h5>
+                        <p class="card-text">Чай богат полифенолами и флавоноидами, которые защищают клетки от повреждений свободными радикалами.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Здоровье сердца</h5>
+                        <p class="card-text">Регулярное употребление чая может снизить риск сердечных заболеваний и артериального давления.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Метаболизм и вес</h5>
+                        <p class="card-text">Чай ускоряет метаболизм и помогает в контроле веса, особенно зеленый чай благодаря катехинам.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Иммунитет</h5>
+                        <p class="card-text">Укрепляет иммунную систему благодаря витаминам и антиоксидантам, помогает организму бороться с инфекциями.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Когнитивные функции</h5>
+                        <p class="card-text">Улучшает концентрацию внимания и память благодаря сочетанию кофеина и L-теанина.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Здоровье костей</h5>
+                        <p class="card-text">Содержит флавоноиды и другие соединения, которые могут помочь укрепить костную ткань.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Пищеварение</h5>
+                        <p class="card-text">Способствует здоровому пищеварению, помогает при вздутии и дискомфорте в желудке.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Гидратация</h5>
+                        <p class="card-text">Несмотря на содержание кофеина, чай помогает поддерживать водный баланс организма.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-info mt-4">
+            <h5>Важное примечание:</h5>
+            <p style="color:#055160;">Максимальную пользу можно получить при регулярном употреблении качественного чая в умеренных количествах (2-3 чашки в день).</p>
+        </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Секция "История" -->
+<section id="history" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">История чая</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="timeline">
+                    <!-- Древний Китай -->
+                    <div class="timeline-item">
+                        <h3>Древний Китай</h3>
+                        <p>История чая начинается в 2737 году до н. э., когда, согласно легенде, китайский император Шэнь Нун открыл чай, когда листья случайно попали в его кипящую воду.</p>
+                        <p>В династии Хань (206 г. до н.э. - 220 г. н.э.) чай стал популярным лечебным напитком. При династии Тан (618-907 гг.) чай превратился в национальный напиток Китая.</p>
+                        <p>В 760 году появился первый письменный трактат о чае "Чайный канон" (Ча Цзин), написанный Лу Юем.</p>
+                    </div>
+
+                    <!-- Распространение в Азии -->
+                    <div class="timeline-item">
+                        <h3>Распространение в Азии</h3>
+                        <p>В VI-VII веках чай проник в Японию через буддийских монахов. В XV-XVI веках развилась уникальная японская чайная церемония (тя-но ю).</p>
+                        <p>Постепенно чай распространился в Корее и странах Юго-Восточной Азии, где сформировались собственные традиции чаепития.</p>
+                    </div>
+
+                    <!-- Появление в Европе -->
+                    <div class="timeline-item">
+                        <h3>Появление в Европе</h3>
+                        <p>В 1610 году голландцы впервые привезли чай в Европу. К 1664 году была основана Британская Ост-Индская компания, начавшая массовый импорт чая в Англию.</p>
+                        <p>В XVII-XVIII веках чай стал популярным напитком в Англии, а в XIX веке появилась знаменитая традиция послеобеденного чаепития (five o'clock tea).</p>
+                    </div>
+
+                    <!-- Чай в России -->
+                    <div class="timeline-item">
+                        <h3>Чай в России</h3>
+                        <p>Россия познакомилась с чаем в XVI веке. Первые официальные поставки чая через Монголию начались в 1638 году.</p>
+                        <p>В XVIII-XIX веках сформировалась уникальная русская чайная традиция, появился самовар как её символ, а торговый путь через Кяхту стал главной чайной артерией страны.</p>
+                    </div>
+
+                    <!-- Современная эпоха -->
+                    <div class="timeline-item">
+                        <h3>Современная эпоха</h3>
+                        <p>Сегодня чай является одним из самых популярных напитков в мире. Развивается органическое чаеводство, возрождается интерес к традиционным методам производства.</p>
+                        <p>Появляются новые сорта и бленды, происходит глобальный обмен чайными традициями разных культур. Научные исследования продолжают открывать новые полезные свойства чая.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Энциклопедия чая. ЧаЙка Автор Frazy or Акфян.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
